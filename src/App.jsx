@@ -665,7 +665,14 @@ export default function Portfolio() {
         </div>
       )}
 
-      <section style={{ maxWidth: 1200, margin: "0 auto", padding: "56px 32px 40px", textAlign: "center" }}>
+      <section
+  style={{
+    maxWidth: 1200,
+    margin: "0 auto",
+    padding: "clamp(28px, 4vh, 56px) 32px 40px",
+    textAlign: "center",
+  }}
+> 
         <img src={PHOTO_SRC} alt="Kashish Rastogi" style={{ width: 168, height: 168, borderRadius: "50%", objectFit: "cover", border: "2px solid var(--green)", display: "block", margin: "0 auto 22px" }} />
         <span className="kr-badge kr-badge-get" style={{ marginBottom: 20 }}>GET /kashish-rastogi</span>
         <h1 className="kr-display" style={{ fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.02em", marginTop: 20 }}>
